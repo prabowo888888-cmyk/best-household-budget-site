@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth &amp; Ledger — Household Budget</title>
+<meta name="description" content="Hearth & Ledger keeps one household's money in one place: income, spending, bills, budgets and savings goals for the month.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <div>
+      <h1>Hearth &amp; Ledger</h1>
+      <p class="tagline">One household, one honest budget.</p>
+    </div>
+  </div>
+  <nav class="mainnav" aria-label="Sections">
+    <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+    <a href="#/transactions" data-route="transactions">Transactions</a>
+    <a href="#/budgets" data-route="budgets">Budgets</a>
+    <a href="#/bills" data-route="bills">Bills</a>
+    <a href="#/goals" data-route="goals">Goals</a>
+    <a href="#/reports" data-route="reports">Reports</a>
+  </nav>
+  <div class="month-picker">
+    <label for="monthSelect">Month</label>
+    <select id="monthSelect"></select>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="footer">
+  <p>Hearth &amp; Ledger — a demo household budget. Figures are a sample; your edits are saved in this browser only.</p>
+  <p><button type="button" id="resetDemo" class="linklike">Reset demo data</button></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
